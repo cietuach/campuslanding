@@ -4,30 +4,6 @@ import {
   LockClosedIcon,
 } from "@heroicons/react/20/solid";
 
-const features = [
-  {
-    name: "¿Funciona en cualquier dispositivo?",
-    description:
-      "Funciona en la mayoría de dispositivos Android y iOS. Si tu dispositivo no cuenta con sistema operativo actualizado o no tiene las características necesarias, es posible que no funcione correctamente.",
-    href: "#",
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: "¿Cuánto tiempo tarda en llegar la ayuda?",
-    description:
-      "La alerta llega a nuestros guardias de seguridad de manera inmediata. El tiempo de respuesta depende de la ubicación de la persona que envía la alerta.",
-    href: "#",
-    icon: LockClosedIcon,
-  },
-  {
-    name: "Simple queues",
-    description:
-      "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
-    href: "#",
-    icon: ArrowPathIcon,
-  },
-];
-
 const faqs = [
   [
     {
@@ -100,26 +76,18 @@ export default function Faqs() {
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-            {features.map((feature) => (
-              <div key={feature.name} className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-                  <feature.icon
-                    className="h-5 w-5 flex-none text-indigo-400"
-                    aria-hidden="true"
-                  />
-                  {feature.name}
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                  <p className="flex-auto">{feature.description}</p>
-                  <p className="mt-6">
-                    <a
-                      href={feature.href}
-                      className="text-sm font-semibold leading-6 text-indigo-400"
-                    >
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
-                  </p>
-                </dd>
+            {faqs.map((section, sectionIdx) => (
+              <div key={sectionIdx} className="space-y-16">
+                {section.map((faq) => (
+                  <div key={faq.question}>
+                    <dt className="text-lg leading-6 font-medium text-indigo-300">
+                      {faq.question}
+                    </dt>
+                    <dd className="mt-2 text-base text-gray-300">
+                      {faq.answer}
+                    </dd>
+                  </div>
+                ))}
               </div>
             ))}
           </dl>
