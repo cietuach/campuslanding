@@ -9,7 +9,7 @@ import Video from "../components/Video";
 export default function Example() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-0 lg:px-0 lg:py-24 sm:items-center">
+      <div className="mx-auto max-w-7xl py-12 px- sm:px-0 lg:px-0 lg:py-24 sm:items-center">
         <div className="space-y-12">
           <div className="place-items-center space-y-4 lg:space-y-1 lg:scale-75 lg:grid lg:grid-cols-4"></div>
           <Hero />
