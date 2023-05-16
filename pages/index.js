@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Faqs from "../components/Faqs";
 import Footer from "../components/Footer";
+import Devs from "../components/Devs";
 
 export default function Example() {
   return (
@@ -12,6 +13,7 @@ export default function Example() {
           <div className="place-items-center space-y-4 lg:space-y-1 lg:scale-75 lg:grid lg:grid-cols-4"></div>
           <Hero />
           <Features />
+          <Devs />
           <Faqs />
           <Footer />
         </div>
