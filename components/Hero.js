@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 const navigation = [{ name: "Campus Seguro" }];
 
-export default function Example() {
+export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -17,10 +16,10 @@ export default function Example() {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Campus Seguro UACH</span>
               <img
                 className="h-14 w-auto"
-                src="https://res.cloudinary.com/djlx5smmq/image/upload/v1683660688/logo-CampusSeguro-nuevo_kfj2bk.png"
+                src="https://uach.mx/assets/media/snippet/62/escudo-web-header-black.svg"
                 alt=""
               />
             </a>
@@ -141,10 +140,16 @@ export default function Example() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
             <div className="flex"></div>
-            <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Campus Seguro
-              <span className="text-purple-900"> UACH</span>
-            </h1>
+            <div className="flex">
+              <img
+                className="h-36 mt-6 pr-3"
+                src="https://res.cloudinary.com/djlx5smmq/image/upload/v1684336890/icono-app-01_w5okmf.png"
+              />
+              <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                Campus Seguro
+                <span className="text-purple-900"> UACH</span>
+              </h1>
+            </div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               La aplicación, disponible para dispositivos Apple y Android,
               permite al usuario enviar alertas inmediatas, para ser atendidas
