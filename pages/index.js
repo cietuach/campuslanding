@@ -5,6 +5,7 @@ import Faqs from "../components/Faqs";
 import Footer from "../components/Footer";
 import Devs from "../components/Devs";
 import Video from "../components/Video";
+import Join from "../components/Join";
 
 export default function Example() {
   return (
@@ -17,6 +18,7 @@ export default function Example() {
           <Features />
           <Devs />
           <Faqs />
+          <Join />
           <Footer />
         </div>
       </div>

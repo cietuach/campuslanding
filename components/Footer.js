@@ -60,7 +60,7 @@ const navigation = {
   ],
 };
 
-export default function Example() {
+export default function Footer() {
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
@@ -79,6 +79,15 @@ export default function Example() {
             </div>
           ))}
         </nav>
+        <div className="mt-16 md:flex md:items-center md:justify-center lg:justify-center">
+          <div className="flex space-x-6 md:order-2">
+            <img
+              src="https://res.cloudinary.com/djlx5smmq/image/upload/v1684349648/2023-svdg_kedbgx.svg"
+              alt="UACH"
+              className="h-32 pb-4 w-auto"
+            />
+          </div>
+        </div>
         <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (
             <a
