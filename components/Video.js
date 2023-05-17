@@ -13,6 +13,7 @@ export default function Video({ id }) {
             }}
           />
         </div>
+        <div></div>
         <div className="mt-10 flex items-center gap-x-6">
           <a
             href="https://www.youtube.com/watch?v=HwDCBP9Id40"
