@@ -4,7 +4,7 @@ const features = [
   {
     name: "Botones de alerta:",
     description:
-      "Te permiten enviar una alerta con tu ubicación a los guardias de seguridad dentro del campus, ellos irán a ayudarte. Gracias los tipos de alerta, acudirán con el equipo necesario para una atención más eficaz.",
+      "Te permiten enviar una alerta con tu ubicación a los guardias de seguridad dentro del campus, ellos irán a ayudarte. Gracias a los tipos de alerta, acudirán con el equipo necesario para una atención más eficaz.",
     icon: ShieldCheckIcon,
   },
   {
