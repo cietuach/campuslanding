@@ -50,13 +50,13 @@ export default function Example() {
             </div>
           </div>
           <div className="flex items-start justify-end lg:order-first">
-            <img
+            {/* <img
               src="https://res.cloudinary.com/djlx5smmq/image/upload/v1683923653/mockopcito_arck6r.png"
               alt="Product screenshot"
               className=""
               width={2432}
               height={1442}
-            />
+            /> */}
           </div>
         </div>
       </div>
